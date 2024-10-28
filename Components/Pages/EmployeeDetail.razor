@@ -1,0 +1,19 @@
+﻿@page "/employeedetail/{EmployeeId:int}"
+
+<h3>EmployeeDetail for @EmployeeId</h3>
+
+
+<section class="employee-detail">
+
+    <h1 class="page-title">
+        Details for @Employee.FirstName @Employee.LastName
+    </h1>
+
+    <br />
+
+    <div class="col-12 row">
+        <div class="col-2 text-center">
+            <img src="@($"http://codewithz.in/training/blazor/images/{Employee.EmployeeId}.jpg")" class="img-fluid rounded-circle employee-detail-img" />
+        </div> 
+    </div>
+</section>
