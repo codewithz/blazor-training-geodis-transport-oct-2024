@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieHRMSApp", "BethanysPieHRMSApp.csproj", "{8F32194A-3188-46A7-8946-35FC3AA88DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieHRMSApp.Shared", "..\BethanysPieHRMSApp.Shared\BethanysPieHRMSApp.Shared.csproj", "{D998F2A3-6E73-4B53-8B88-08F9617AF33D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F32194A-3188-46A7-8946-35FC3AA88DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F32194A-3188-46A7-8946-35FC3AA88DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F32194A-3188-46A7-8946-35FC3AA88DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F32194A-3188-46A7-8946-35FC3AA88DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D998F2A3-6E73-4B53-8B88-08F9617AF33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D998F2A3-6E73-4B53-8B88-08F9617AF33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D998F2A3-6E73-4B53-8B88-08F9617AF33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D998F2A3-6E73-4B53-8B88-08F9617AF33D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAC6258D-D4C1-455B-B210-433CD7D28F88}
+	EndGlobalSection
+EndGlobal
