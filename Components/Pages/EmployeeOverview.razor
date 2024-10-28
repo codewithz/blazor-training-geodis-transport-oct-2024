@@ -1,1 +1,25 @@
-﻿@page "/emplyeeoverview"
+﻿@page "/employeeoverview"
+
+<h1>Employee Overview</h1>  
+
+<table class="table table-light">
+    <thead class="table-primary">
+        <tr>
+            <th></th>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+          @foreach(var employee in Employees)
+            {
+        <tr>
+            <td><img src="@($"http://codewithz.in/training/blazor/images/{employee.EmployeeId}-small.jpg")" /></td>
+            <td>@employee.EmployeeId</td>
+            <td>@employee.FirstName</td>
+            <td>@employee.LastName</td>
+        </tr>
+      }
+    </tbody>
+</table>
