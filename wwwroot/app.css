@@ -1,11 +1,11 @@
-@charset "UTF-8";
+ï»¿@charset "UTF-8";
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css");
+@import url("open-iconic/font/css/open-iconic-bootstrap.min.css");
 
 :root {
     --bs-blue: #0d6efd;
@@ -610,7 +610,7 @@ progress {
 }
 
     .blockquote-footer::before {
-        content: "— ";
+        content: "â€”Â ";
     }
 
 .img-fluid {
@@ -12461,4 +12461,8 @@ h6, .h6 {
 .employee-detail, .employee-edit {
     padding: 15px;
     background-color: #FFF !important;
+}
+
+.profile-picture {
+    opacity: 0.7 !important;
 }
