@@ -17,5 +17,10 @@ namespace BethanysPieHRMSApp.Components.Pages
             Employee = MockDataService.Employees.Single(e => e.EmployeeId == EmployeeId);
         }
 
+        private void ChangeHolidayState()
+        {
+            Employee.IsOnHoliday = !Employee.IsOnHoliday;
+        }
+
     }
 }
