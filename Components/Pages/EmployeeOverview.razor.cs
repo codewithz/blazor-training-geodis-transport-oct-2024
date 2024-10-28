@@ -10,7 +10,7 @@ namespace BethanysPieHRMSApp.Components.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            await Task.Delay(5000);
+            await Task.Delay(2000);
             Employees =  MockDataService.Employees;
         }
     }
