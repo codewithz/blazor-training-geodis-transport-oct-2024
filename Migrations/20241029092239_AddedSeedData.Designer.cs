@@ -4,6 +4,7 @@ using BethanysPieHRMSApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BethanysPieHRMSApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241029092239_AddedSeedData")]
+    partial class AddedSeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,50 +191,6 @@ namespace BethanysPieHRMSApp.Migrations
                             Smoker = false,
                             Street = "Grote Markt 1",
                             Zip = "1000"
-                        },
-                        new
-                        {
-                            EmployeeId = 2,
-                            BirthDate = new DateTime(1983, 5, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            City = "Amsterdam",
-                            Comment = "Experienced Software Engineer",
-                            CountryId = 2,
-                            Email = "john@company.com",
-                            FirstName = "John",
-                            Gender = 0,
-                            IsOnHoliday = false,
-                            JobCategoryId = 2,
-                            JoinedDate = new DateTime(2018, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Doe",
-                            Latitude = 52.367600000000003,
-                            Longitude = 4.9040999999999997,
-                            MaritalStatus = 0,
-                            PhoneNumber = "31234567890",
-                            Smoker = false,
-                            Street = "Damrak 20",
-                            Zip = "1012"
-                        },
-                        new
-                        {
-                            EmployeeId = 3,
-                            BirthDate = new DateTime(1991, 2, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            City = "Paris",
-                            Comment = "Marketing Specialist",
-                            CountryId = 3,
-                            Email = "sarah@company.com",
-                            FirstName = "Sarah",
-                            Gender = 1,
-                            IsOnHoliday = false,
-                            JobCategoryId = 3,
-                            JoinedDate = new DateTime(2020, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Connor",
-                            Latitude = 48.8566,
-                            Longitude = 2.3521999999999998,
-                            MaritalStatus = 1,
-                            PhoneNumber = "33456789012",
-                            Smoker = true,
-                            Street = "Champs-Élysées 55",
-                            Zip = "75008"
                         });
                 });
 
