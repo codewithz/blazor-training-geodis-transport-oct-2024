@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieHRMSApp", "BethanysPieHRMSApp.csproj", "{8F32194A-3188-46A7-8946-35FC3AA88DEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieHRMSApp", "BethanysPieHRMSApp.csproj", "{8F32194A-3188-46A7-8946-35FC3AA88DEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieHRMSApp.Shared", "..\BethanysPieHRMSApp.Shared\BethanysPieHRMSApp.Shared.csproj", "{D998F2A3-6E73-4B53-8B88-08F9617AF33D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieHRMSApp.Shared", "..\BethanysPieHRMSApp.Shared\BethanysPieHRMSApp.Shared.csproj", "{D998F2A3-6E73-4B53-8B88-08F9617AF33D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
