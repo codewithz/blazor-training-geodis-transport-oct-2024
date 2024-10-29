@@ -10,6 +10,8 @@ namespace BethanysPieHRMSApp.Components.Pages
         private Employee? _selectedEmployee;
         public List<Employee> Employees { get; set; } = new List<Employee>();
 
+        private string Title= "Employee Overview";
+
         protected override async Task OnInitializedAsync()
         {
             await Task.Delay(1000);

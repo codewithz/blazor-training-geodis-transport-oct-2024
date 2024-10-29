@@ -72,30 +72,30 @@ namespace BethanysPieHRMSApp.Services
                 IsOnHoliday = false
             };
 
-            var e3 = new Employee
-            {
-                MaritalStatus = MaritalStatus.Married,
-                BirthDate = new DateTime(1979, 1, 16),
-                City = "Antwerp",
-                Email = "gill@bethanyspieshop.com",
-                EmployeeId = 3,
-                FirstName = "Jane",
-                LastName = string.Empty,
-                Gender = Gender.Female,
-                PhoneNumber = "33999909923",
-                Smoker = false,
-                Street = "New Street",
-                Zip = "2000",
-                JobCategory = _jobCategories[1],
-                JobCategoryId = _jobCategories[1].JobCategoryID,
-                Comment = "Lorem Ipsum",
-                ExitDate = null,
-                JoinedDate = new DateTime(2017, 12, 24),
-                Country = _countries[1],
-                CountryId = _countries[1].CountryID
-            };
+            //var e3 = new Employee
+            //{
+            //    MaritalStatus = MaritalStatus.Married,
+            //    BirthDate = new DateTime(1979, 1, 16),
+            //    City = "Antwerp",
+            //    Email = "gill@bethanyspieshop.com",
+            //    EmployeeId = 3,
+            //    FirstName = "Jane",
+            //    LastName = string.Empty,
+            //    Gender = Gender.Female,
+            //    PhoneNumber = "33999909923",
+            //    Smoker = false,
+            //    Street = "New Street",
+            //    Zip = "2000",
+            //    JobCategory = _jobCategories[1],
+            //    JobCategoryId = _jobCategories[1].JobCategoryID,
+            //    Comment = "Lorem Ipsum",
+            //    ExitDate = null,
+            //    JoinedDate = new DateTime(2017, 12, 24),
+            //    Country = _countries[1],
+            //    CountryId = _countries[1].CountryID
+            //};
 
-            return [ e1, e2, e3 ];
+            return [ e1, e2];
         }
 
         private static List<JobCategory> InitializeMockJobCategories() => [
