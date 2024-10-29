@@ -7,5 +7,8 @@ namespace BethanysPieHRMSApp.Components
     {
         [Parameter]
         public Employee Employee { get; set; }
+
+        [Parameter]
+        public EventCallback<Employee> EmployeeQuickViewClicked { get; set; }
     }
 }
