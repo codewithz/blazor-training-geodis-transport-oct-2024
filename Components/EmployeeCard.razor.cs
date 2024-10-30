@@ -13,10 +13,10 @@ namespace BethanysPieHRMSApp.Components
 
         protected override void OnInitialized()
         {
-            if (string.IsNullOrEmpty(Employee.LastName))
-            {
-                throw new Exception("Last name is required");
-            }
+            //if (string.IsNullOrEmpty(Employee.LastName))
+            //{
+            //    throw new Exception("Last name is required");
+            //}
         }
     }
 }
