@@ -1,16 +1,22 @@
 ﻿@page "/employeeadd"
+@using BethanysPieHRMSApp.Shared.Domain
+
+@rendermode InteractiveServer
 
 <PageTitle>Add A New Employee</PageTitle>
 
 @if (IsSaved == false)
 {
     <EditForm method="post" OnSubmit="OnSubmit" Enhance FormName="AddEmployeeForm" Model="Employee">
+        <DataAnnotationsValidator/>
+        <ValidationSummary ></ValidationSummary>
       
         <div class="row mb-3">
             <label for="lastName" class="col-form-label col-md-3">Last name: </label>
             <div class="col-md-8">
                 <InputText id="lastName" class="form-control col-md-8" @bind-Value="@Employee.LastName" placeholder="Enter last name"></InputText>
             </div>
+            <ValidationMessage class="offset-md-3 col-md-8 alert alert-danger" role="alert" For="@(() => Employee.LastName)" />
         </div>
 
         <div class="row mb-3">
@@ -18,6 +24,7 @@
             <div class="col-md-8">
                 <InputText id="firstName" class="form-control col-md-8" @bind-Value="@Employee.FirstName" placeholder="Enter First name"></InputText>
             </div>
+            <ValidationMessage class="offset-md-3 col-md-8 alert alert-danger" role="alert" For="@(() => Employee.FirstName)" />
         </div>
 
         <div class="row mb-3">
@@ -25,6 +32,7 @@
             <div class="col-md-8">
                 <InputText id="email" class="form-control col-md-8" @bind-Value="@Employee.Email" placeholder="Enter Email"></InputText>
             </div>
+            <ValidationMessage class="offset-md-3 col-md-8 alert alert-danger" role="alert" For="@(() => Employee.Email)" />
         </div>
 
 
@@ -33,6 +41,7 @@
             <div class="col-md-8">
                 <InputTextArea id="comment" class="form-control col-md-8" @bind-Value="@Employee.Comment" placeholder="Enter Comment"></InputTextArea>
             </div>
+            <ValidationMessage class="offset-md-3 col-md-8 alert alert-danger" role="alert" For="@(() => Employee.Comment)" />
         </div>
 
         <div>
