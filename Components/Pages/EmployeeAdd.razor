@@ -1,0 +1,14 @@
+﻿@page "/employeeadd"
+
+<PageTitle>Add A New Employee</PageTitle>
+
+<form method="post" @onsubmit="OnSubmit" @formname="add-employee-form">
+
+    <div class="row mb-3">
+        <label for="lastName" class="col-form-label col-md-3">Last name: </label>
+        <div class="col-md-8">
+            <InputText id="lastName" class="form-control col-md-8" @bind-Value="@Employee.LastName" placeholder="Enter last name"></InputText>
+        </div>
+    </div>
+
+</form>
