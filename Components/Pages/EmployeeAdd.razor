@@ -2,8 +2,8 @@
 
 <PageTitle>Add A New Employee</PageTitle>
 
-<form method="post" @onsubmit="OnSubmit" @formname="add-employee-form">
-
+<form method="post" @onsubmit="OnSubmit" data-enhance @formname="add-employee-form">
+    <AntiforgeryToken />
     <div class="row mb-3">
         <label for="lastName" class="col-form-label col-md-3">Last name: </label>
         <div class="col-md-8">
