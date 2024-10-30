@@ -6,5 +6,7 @@ namespace BethanysPieHRMSApp.Contracts.Services
     {
         Task<IEnumerable<Employee>> GetAllEmployees();
         Task<Employee> GetEmployeeById(int employeeId);
+
+        Task<Employee> AddEmployee(Employee employee);
     }
 }

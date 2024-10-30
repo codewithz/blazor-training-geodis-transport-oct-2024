@@ -14,6 +14,11 @@ namespace BethanysPieHRMSApp.Services
             _employeeRepository = employeeRepository;
         }
 
+        public async Task<Employee> AddEmployee(Employee employee)
+        {
+            return await _employeeRepository.AddEmployee(employee);
+        }
+
         public async Task<IEnumerable<Employee>> GetAllEmployees()
         {
             return await _employeeRepository.GetAllEmployees();

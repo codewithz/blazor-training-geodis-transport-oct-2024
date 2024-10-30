@@ -16,7 +16,12 @@ namespace BethanysPieHRMSApp.Repositories
             _appDbContext = DbFactory.CreateDbContext();
         }
 
-   
+        public async Task<Employee> AddEmployee(Employee employee)
+        {
+            var addedEntity = await _appDbContext.Employees.AddAsync(employee);
+            await _appDbContext.SaveChangesAsync();
+            return addedEntity.Entity;
+        }
 
         public async Task<IEnumerable<Employee>> GetAllEmployees()
         {
