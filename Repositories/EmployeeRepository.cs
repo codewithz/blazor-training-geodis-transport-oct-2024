@@ -1,18 +1,31 @@
 ﻿using BethanysPieHRMSApp.Contracts.Repositories;
+using BethanysPieHRMSApp.Data;
 using BethanysPieHRMSApp.Shared.Domain;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieHRMSApp.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        public Task<IEnumerable<Employee>> GetAllEmployees()
+
+        private readonly AppDbContext _appDbContext;
+
+        public EmployeeRepository(IDbContextFactory<AppDbContext> DbFactory)
         {
-            throw new NotImplementedException();
+            _appDbContext = DbFactory.CreateDbContext();
         }
 
-        public Task<Employee> GetEmployeeById(int employeeId)
+   
+
+        public async Task<IEnumerable<Employee>> GetAllEmployees()
         {
-            throw new NotImplementedException();
+            return await _appDbContext.Employees.ToListAsync();
+        }
+
+        public async Task<Employee> GetEmployeeById(int employeeId)
+        {
+            return await _appDbContext.Employees.FirstOrDefaultAsync(c => c.EmployeeId == employeeId);
         }
     }
 }
