@@ -1,0 +1,40 @@
+﻿@page "/dummy-form"
+@rendermode InteractiveServer
+
+<h1>Data Binding in Blazor!!</h1>
+
+<div>
+    <h2>One Way Data Binding</h2>
+    Employee First Name : <label>@Employee.FirstName</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; || &nbsp;&nbsp;&nbsp;&nbsp;
+    Employee Last Name : <label>@Employee.LastName</label>
+</div>
+
+<div>
+    <h2>One Way Data Binding on Form Controls</h2>
+    First Name: <input value="@Employee.FirstName" />
+    <br/>
+    Last Name: <input value="@Employee.LastName" />
+
+</div>
+
+<div>
+    <h2>Two Way Data Binding on Form Controls</h2>
+    First Name: <input @bind="@Employee.FirstName" />
+    <br/>
+    Last Name: <input @bind="@Employee.LastName" />
+
+</div>
+
+<div>
+    <h2>Two Way Data Binding on Form Controls with different event</h2>
+    First Name: <input @bind-value="@Employee.FirstName" @bind-value:event="oninput"/>
+    <br/>
+    Last Name: <input @bind-value="@Employee.LastName" @bind-value:event="oninput" />
+
+</div>
+
+<div>
+    <button class="btn-primary" @onclick="Save">Click Me</button>
+</div>
+
