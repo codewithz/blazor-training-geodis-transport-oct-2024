@@ -7,16 +7,21 @@ namespace BethanysPieHRMSApp.Services
 {
     public class EmployeeService : IEmployeeService
     {
+        private readonly IEmployeeRepository _employeeRepository;
 
-    
-        public Task<IEnumerable<Employee>> GetAllEmployees()
+        public EmployeeService(IEmployeeRepository employeeRepository)
         {
-            throw new NotImplementedException();
+            _employeeRepository = employeeRepository;
+        }
+
+        public async Task<IEnumerable<Employee>> GetAllEmployees()
+        {
+            return await _employeeRepository.GetAllEmployees();
         }
 
         public Task<Employee> GetEmployeeById(int employeeId)
         {
-            throw new NotImplementedException();
+            return _employeeRepository.GetEmployeeById(employeeId); 
         }
     }
 }
